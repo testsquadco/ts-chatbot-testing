@@ -1,0 +1,23 @@
+Welcome Flow
+
+#me
+hello
+
+#bot
+Welcome to the test bot! How can I help you today?
+
+#me
+what can you do?
+
+#bot
+I can help you with various tasks. Here are some things I can do:
+BUTTONS
+- Check weather
+- Set reminders
+- Answer questions
+
+#me
+goodbye
+
+#bot
+Goodbye! Have a great day! 

@@ -1,0 +1,28 @@
+{
+  "botium": {
+    "Capabilities": {
+      "PROJECTNAME": "Botium Chatbot Testing",
+      "CONTAINERMODE": "directline3",
+      "DIRECTLINE3_SECRET": "YOUR_DIRECT_LINE_SECRET",
+      "DIRECTLINE3_WEBHOOK_PORT": "3000",
+      "WAITFORBOTTIMEOUT": 10000,
+      "ASSERTERS": [
+        {
+          "ref": "INTENT",
+          "src": "IntentAsserter"
+        }
+      ],
+      "SCRIPTING_ENABLE_MEMORY": true,
+      "SCRIPTING_MEMORYEXPIRY": 300000
+    },
+    "Sources": {
+      "UTTERANCES": "./tests/utterances"
+    },
+    "Envs": {
+      "NODE_ENV": "test"
+    },
+    "Scripts": {
+      "CUSTOMHOOK": "./scripts/custom.js"
+    }
+  }
+} 

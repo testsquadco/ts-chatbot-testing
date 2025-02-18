@@ -1,0 +1,284 @@
+Test Report - 2025-02-18 14:18:33
+=====================================
+
+Test Output:
+
+
+  Botium Test-Suite
+getSessionId
+    1) "before each" hook for "Error Handling Flow"
+
+
+  0 passing (2s)
+  1 failing
+
+  1) Botium Test-Suite
+       "before each" hook for "Error Handling Flow":
+     Error: Directline failed to connect - check the Directline Secret
+      at SafeSubscriber._next (node_modules/botium-connector-directline3/dist/botium-connector-directline3-cjs.js:358:40)
+      at SafeSubscriber.__tryOrUnsub (node_modules/rxjs/Subscriber.js:242:16)
+      at SafeSubscriber.next (node_modules/rxjs/Subscriber.js:189:22)
+      at Subscriber._next (node_modules/rxjs/Subscriber.js:129:26)
+      at Subscriber.next (node_modules/rxjs/Subscriber.js:93:18)
+      at Subject.next (node_modules/rxjs/Subject.js:55:25)
+      at BehaviorSubject.next (node_modules/rxjs/BehaviorSubject.js:44:31)
+      at SafeSubscriber._error (node_modules/botframework-directlinejs/lib/directLine.js:268:39)
+      at SafeSubscriber.__tryOrSetError (node_modules/rxjs/Subscriber.js:251:16)
+      at SafeSubscriber.error (node_modules/rxjs/Subscriber.js:205:26)
+
+
+
+
+
+Errors:
+2025-02-18T09:18:31.960Z botium-cli Using Botium configuration file ./botium.json
+2025-02-18T09:18:31.961Z botium-cli-run command options: {
+  _: [ 'run' ],
+  convos: [ './tests/convos' ],
+  C: [ './tests/convos' ],
+  verbose: true,
+  v: true,
+  config: './botium.json',
+  c: './botium.json',
+  output: 'spec',
+  testsuitename: 'Botium Test-Suite',
+  n: 'Botium Test-Suite',
+  expandutterances: false,
+  expandscriptingmemory: false,
+  timeout: 60,
+  '$0': '/Users/eliya/ts-chatbot-testing/node_modules/.bin/botium-cli'
+}
+2025-02-18T09:18:31.961Z botium-cli-run Mocha Reporter "spec", options: undefined
+2025-02-18T09:18:31.962Z botium-core-BotDriver Loaded Botium configuration files /Users/eliya/ts-chatbot-testing/botium.json
+2025-02-18T09:18:32.041Z botium-core-asserterUtils INTENT asserter already exists, overwriting.
+2025-02-18T09:18:32.046Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found filenames: error_handling.convo.txt,weather_flow.convo.txt,welcome.convo.txt
+2025-02-18T09:18:32.048Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found convos:
+ 1 Error Handling Flow ({ convoDir: './tests/convos', filename: 'error_handling.convo.txt' }): Line 3: #me - asdfghjkl | Line 6: #bot - I'm sorry, I didn't understand that. Could you please rephrase? | Line 9: #me - !@#$%^&*() | Line 12: #bot - I'm having trouble understanding. Would you like to:
+- Start over
+- Get help
+- Speak to a human BUTTONS()
+2 Weather Check Flow ({ convoDir: './tests/convos', filename: 'weather_flow.convo.txt' }): Line 3: #me - check weather | Line 6: #bot - Sure! For which city would you like to check the weather? | Line 9: #me - London | Line 12: #bot -  INTENT(weather.check) | Line 15: #me - what's the weather like in New York? | Line 18: #bot - ENTITY city="New York" INTENT(weather.check)
+3 Welcome Flow ({ convoDir: './tests/convos', filename: 'welcome.convo.txt' }): Line 3: #me - hello | Line 6: #bot - Welcome to the test bot! How can I help you today? | Line 9: #me - what can you do? | Line 12: #bot - I can help you with various tasks. Here are some things I can do:
+- Check weather
+- Set reminders
+- Answer questions BUTTONS() | Line 19: #me - goodbye | Line 22: #bot - Goodbye! Have a great day!
+2025-02-18T09:18:32.048Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found utterances:
+ none
+2025-02-18T09:18:32.048Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found partial convos:
+ none
+2025-02-18T09:18:32.049Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) scripting memories:
+ none
+2025-02-18T09:18:32.049Z botium-cli-run ready reading convos (3), expanding convos ...
+2025-02-18T09:18:32.049Z botium-core-ScriptingProvider ExpandConvos - Using utterances expansion mode: all
+2025-02-18T09:18:32.067Z botium-cli-run ready expanding convos and utterances, number of test cases: (3).
+2025-02-18T09:18:32.068Z botium-cli-run adding test case Error Handling Flow (from: { convoDir: './tests/convos', filename: 'error_handling.convo.txt' })
+2025-02-18T09:18:32.068Z botium-cli-run adding test case Weather Check Flow (from: { convoDir: './tests/convos', filename: 'weather_flow.convo.txt' })
+2025-02-18T09:18:32.068Z botium-cli-run adding test case Welcome Flow (from: { convoDir: './tests/convos', filename: 'welcome.convo.txt' })
+2025-02-18T09:18:32.078Z botium-core-BotDriver Build - Botium Core Version: 1.11.15
+2025-02-18T09:18:32.079Z botium-core-BotDriver Build - Capabilites: {
+  PROJECTNAME: 'Botium Chatbot Testing',
+  TESTSESSIONNAME: 'Botium Test Session',
+  TESTCASENAME: 'Botium Test Case',
+  TEMPDIR: 'botiumwork',
+  CLEANUPTEMPDIR: true,
+  WAITFORBOTTIMEOUT: 10000,
+  SIMULATE_WRITING_SPEED: false,
+  SIMPLEREST_PING_RETRIES: 6,
+  SIMPLEREST_PING_TIMEOUT: 10000,
+  SIMPLEREST_PING_VERB: 'GET',
+  SIMPLEREST_PING_UPDATE_CONTEXT: true,
+  SIMPLEREST_PING_PROCESS_RESPONSE: false,
+  SIMPLEREST_INIT_PROCESS_RESPONSE: false,
+  SIMPLEREST_STOP_RETRIES: 6,
+  SIMPLEREST_STOP_TIMEOUT: 10000,
+  SIMPLEREST_STOP_VERB: 'GET',
+  SIMPLEREST_START_RETRIES: 6,
+  SIMPLEREST_START_TIMEOUT: 10000,
+  SIMPLEREST_START_UPDATE_CONTEXT: true,
+  SIMPLEREST_START_PROCESS_RESPONSE: true,
+  SIMPLEREST_START_VERB: 'GET',
+  SIMPLEREST_POLL_VERB: 'GET',
+  SIMPLEREST_POLL_INTERVAL: 1000,
+  SIMPLEREST_POLL_UPDATE_CONTEXT: true,
+  SIMPLEREST_METHOD: 'GET',
+  SIMPLEREST_IGNORE_EMPTY: true,
+  SIMPLEREST_TIMEOUT: 10000,
+  SIMPLEREST_EXTRA_OPTIONS: {},
+  SIMPLEREST_STRICT_SSL: true,
+  SIMPLEREST_INBOUND_UPDATE_CONTEXT: true,
+  SIMPLEREST_CONTEXT_MERGE_OR_REPLACE: 'MERGE',
+  SCRIPTING_TXT_EOL: '\n',
+  SCRIPTING_XLSX_EOL_WRITE: '\r\n',
+  SCRIPTING_XLSX_HASHEADERS: true,
+  SCRIPTING_CSV_SKIP_HEADER: true,
+  SCRIPTING_CSV_QUOTE: '"',
+  SCRIPTING_CSV_ESCAPE: '"',
+  SCRIPTING_NORMALIZE_TEXT: true,
+  SCRIPTING_ENABLE_MEMORY: true,
+  SCRIPTING_ENABLE_MULTIPLE_ASSERT_ERRORS: false,
+  SCRIPTING_MATCHING_MODE: 'wildcardIgnoreCase',
+  SCRIPTING_UTTEXPANSION_MODE: 'all',
+  SCRIPTING_UTTEXPANSION_RANDOM_COUNT: 1,
+  SCRIPTING_UTTEXPANSION_NAMING_MODE: 'justLineTag',
+  SCRIPTING_UTTEXPANSION_NAMING_UTTERANCE_MAX: '16',
+  SCRIPTING_MEMORYEXPANSION_KEEP_ORIG: false,
+  SCRIPTING_FORCE_BOT_CONSUMED: false,
+  ASSERTERS: [ { ref: 'INTENT', src: 'IntentAsserter' } ],
+  LOGIC_HOOKS: [],
+  USER_INPUTS: [],
+  SECURITY_ALLOW_UNSAFE: true,
+  CONTAINERMODE: 'directline3',
+  DIRECTLINE3_SECRET: 'YOUR_DIRECT_LINE_SECRET',
+  DIRECTLINE3_WEBHOOK_PORT: '3000',
+  SCRIPTING_MEMORYEXPIRY: 300000,
+  CONFIG: './botium.json'
+}
+2025-02-18T09:18:32.079Z botium-core-BotDriver Build - Sources : {
+  LOCALPATH: '.',
+  GITPATH: 'git',
+  GITBRANCH: 'master',
+  GITDIR: '.',
+  UTTERANCES: './tests/utterances'
+}
+2025-02-18T09:18:32.079Z botium-core-BotDriver Build - Envs : { IS_BOTIUM_CONTAINER: true, NODE_ENV: 'test' }
+2025-02-18T09:18:32.359Z botium-connector-PluginConnectorContainer-helper Botium plugin botium-connector-directline3 loaded. Plugin version is 0.1.1
+2025-02-18T09:18:32.359Z botium-connector-directline3 Validate called
+2025-02-18T09:18:32.359Z botium-connector-directline3 Build called
+2025-02-18T09:18:32.360Z botium-connector-directline3 Start called
+2025-02-18T09:18:32.373Z botium-connector-directline3 Directline Connection Status: 1 / Connecting
+2025-02-18T09:18:33.842Z botium-connector-directline3 Directline Connection Status: 4 / FailedToConnect
+2025-02-18T09:18:33.843Z botium-connector-directline3 Error in waiting for activities: ajax error 403
+2025-02-18T09:18:33.846Z botium-connector-directline3 Stop called
+2025-02-18T09:18:33.846Z botium-connector-directline3 unsubscribed from directline activity subscription
+2025-02-18T09:18:33.846Z botium-connector-directline3 unsubscribing from directline connectionstatus subscription
+2025-02-18T09:18:33.846Z botium-connector-directline3 ending directline connection
+2025-02-18T09:18:33.847Z botium-connector-directline3 Clean called
+2025-02-18T09:18:33.847Z botium-connector-BaseContainer Cleanup rimrafing temp dir /Users/eliya/ts-chatbot-testing/botiumwork/Botium Chatbot Testing 20250218 141832 g3OqM
+
+
+Execution Error:
+Command failed: npx botium-cli run --convos ./tests/convos --verbose
+2025-02-18T09:18:31.960Z botium-cli Using Botium configuration file ./botium.json
+2025-02-18T09:18:31.961Z botium-cli-run command options: {
+  _: [ 'run' ],
+  convos: [ './tests/convos' ],
+  C: [ './tests/convos' ],
+  verbose: true,
+  v: true,
+  config: './botium.json',
+  c: './botium.json',
+  output: 'spec',
+  testsuitename: 'Botium Test-Suite',
+  n: 'Botium Test-Suite',
+  expandutterances: false,
+  expandscriptingmemory: false,
+  timeout: 60,
+  '$0': '/Users/eliya/ts-chatbot-testing/node_modules/.bin/botium-cli'
+}
+2025-02-18T09:18:31.961Z botium-cli-run Mocha Reporter "spec", options: undefined
+2025-02-18T09:18:31.962Z botium-core-BotDriver Loaded Botium configuration files /Users/eliya/ts-chatbot-testing/botium.json
+2025-02-18T09:18:32.041Z botium-core-asserterUtils INTENT asserter already exists, overwriting.
+2025-02-18T09:18:32.046Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found filenames: error_handling.convo.txt,weather_flow.convo.txt,welcome.convo.txt
+2025-02-18T09:18:32.048Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found convos:
+ 1 Error Handling Flow ({ convoDir: './tests/convos', filename: 'error_handling.convo.txt' }): Line 3: #me - asdfghjkl | Line 6: #bot - I'm sorry, I didn't understand that. Could you please rephrase? | Line 9: #me - !@#$%^&*() | Line 12: #bot - I'm having trouble understanding. Would you like to:
+- Start over
+- Get help
+- Speak to a human BUTTONS()
+2 Weather Check Flow ({ convoDir: './tests/convos', filename: 'weather_flow.convo.txt' }): Line 3: #me - check weather | Line 6: #bot - Sure! For which city would you like to check the weather? | Line 9: #me - London | Line 12: #bot -  INTENT(weather.check) | Line 15: #me - what's the weather like in New York? | Line 18: #bot - ENTITY city="New York" INTENT(weather.check)
+3 Welcome Flow ({ convoDir: './tests/convos', filename: 'welcome.convo.txt' }): Line 3: #me - hello | Line 6: #bot - Welcome to the test bot! How can I help you today? | Line 9: #me - what can you do? | Line 12: #bot - I can help you with various tasks. Here are some things I can do:
+- Check weather
+- Set reminders
+- Answer questions BUTTONS() | Line 19: #me - goodbye | Line 22: #bot - Goodbye! Have a great day!
+2025-02-18T09:18:32.048Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found utterances:
+ none
+2025-02-18T09:18:32.048Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) found partial convos:
+ none
+2025-02-18T09:18:32.049Z botium-core-ScriptingProvider ReadConvosFromDirectory(./tests/convos) scripting memories:
+ none
+2025-02-18T09:18:32.049Z botium-cli-run ready reading convos (3), expanding convos ...
+2025-02-18T09:18:32.049Z botium-core-ScriptingProvider ExpandConvos - Using utterances expansion mode: all
+2025-02-18T09:18:32.067Z botium-cli-run ready expanding convos and utterances, number of test cases: (3).
+2025-02-18T09:18:32.068Z botium-cli-run adding test case Error Handling Flow (from: { convoDir: './tests/convos', filename: 'error_handling.convo.txt' })
+2025-02-18T09:18:32.068Z botium-cli-run adding test case Weather Check Flow (from: { convoDir: './tests/convos', filename: 'weather_flow.convo.txt' })
+2025-02-18T09:18:32.068Z botium-cli-run adding test case Welcome Flow (from: { convoDir: './tests/convos', filename: 'welcome.convo.txt' })
+2025-02-18T09:18:32.078Z botium-core-BotDriver Build - Botium Core Version: 1.11.15
+2025-02-18T09:18:32.079Z botium-core-BotDriver Build - Capabilites: {
+  PROJECTNAME: 'Botium Chatbot Testing',
+  TESTSESSIONNAME: 'Botium Test Session',
+  TESTCASENAME: 'Botium Test Case',
+  TEMPDIR: 'botiumwork',
+  CLEANUPTEMPDIR: true,
+  WAITFORBOTTIMEOUT: 10000,
+  SIMULATE_WRITING_SPEED: false,
+  SIMPLEREST_PING_RETRIES: 6,
+  SIMPLEREST_PING_TIMEOUT: 10000,
+  SIMPLEREST_PING_VERB: 'GET',
+  SIMPLEREST_PING_UPDATE_CONTEXT: true,
+  SIMPLEREST_PING_PROCESS_RESPONSE: false,
+  SIMPLEREST_INIT_PROCESS_RESPONSE: false,
+  SIMPLEREST_STOP_RETRIES: 6,
+  SIMPLEREST_STOP_TIMEOUT: 10000,
+  SIMPLEREST_STOP_VERB: 'GET',
+  SIMPLEREST_START_RETRIES: 6,
+  SIMPLEREST_START_TIMEOUT: 10000,
+  SIMPLEREST_START_UPDATE_CONTEXT: true,
+  SIMPLEREST_START_PROCESS_RESPONSE: true,
+  SIMPLEREST_START_VERB: 'GET',
+  SIMPLEREST_POLL_VERB: 'GET',
+  SIMPLEREST_POLL_INTERVAL: 1000,
+  SIMPLEREST_POLL_UPDATE_CONTEXT: true,
+  SIMPLEREST_METHOD: 'GET',
+  SIMPLEREST_IGNORE_EMPTY: true,
+  SIMPLEREST_TIMEOUT: 10000,
+  SIMPLEREST_EXTRA_OPTIONS: {},
+  SIMPLEREST_STRICT_SSL: true,
+  SIMPLEREST_INBOUND_UPDATE_CONTEXT: true,
+  SIMPLEREST_CONTEXT_MERGE_OR_REPLACE: 'MERGE',
+  SCRIPTING_TXT_EOL: '\n',
+  SCRIPTING_XLSX_EOL_WRITE: '\r\n',
+  SCRIPTING_XLSX_HASHEADERS: true,
+  SCRIPTING_CSV_SKIP_HEADER: true,
+  SCRIPTING_CSV_QUOTE: '"',
+  SCRIPTING_CSV_ESCAPE: '"',
+  SCRIPTING_NORMALIZE_TEXT: true,
+  SCRIPTING_ENABLE_MEMORY: true,
+  SCRIPTING_ENABLE_MULTIPLE_ASSERT_ERRORS: false,
+  SCRIPTING_MATCHING_MODE: 'wildcardIgnoreCase',
+  SCRIPTING_UTTEXPANSION_MODE: 'all',
+  SCRIPTING_UTTEXPANSION_RANDOM_COUNT: 1,
+  SCRIPTING_UTTEXPANSION_NAMING_MODE: 'justLineTag',
+  SCRIPTING_UTTEXPANSION_NAMING_UTTERANCE_MAX: '16',
+  SCRIPTING_MEMORYEXPANSION_KEEP_ORIG: false,
+  SCRIPTING_FORCE_BOT_CONSUMED: false,
+  ASSERTERS: [ { ref: 'INTENT', src: 'IntentAsserter' } ],
+  LOGIC_HOOKS: [],
+  USER_INPUTS: [],
+  SECURITY_ALLOW_UNSAFE: true,
+  CONTAINERMODE: 'directline3',
+  DIRECTLINE3_SECRET: 'YOUR_DIRECT_LINE_SECRET',
+  DIRECTLINE3_WEBHOOK_PORT: '3000',
+  SCRIPTING_MEMORYEXPIRY: 300000,
+  CONFIG: './botium.json'
+}
+2025-02-18T09:18:32.079Z botium-core-BotDriver Build - Sources : {
+  LOCALPATH: '.',
+  GITPATH: 'git',
+  GITBRANCH: 'master',
+  GITDIR: '.',
+  UTTERANCES: './tests/utterances'
+}
+2025-02-18T09:18:32.079Z botium-core-BotDriver Build - Envs : { IS_BOTIUM_CONTAINER: true, NODE_ENV: 'test' }
+2025-02-18T09:18:32.359Z botium-connector-PluginConnectorContainer-helper Botium plugin botium-connector-directline3 loaded. Plugin version is 0.1.1
+2025-02-18T09:18:32.359Z botium-connector-directline3 Validate called
+2025-02-18T09:18:32.359Z botium-connector-directline3 Build called
+2025-02-18T09:18:32.360Z botium-connector-directline3 Start called
+2025-02-18T09:18:32.373Z botium-connector-directline3 Directline Connection Status: 1 / Connecting
+2025-02-18T09:18:33.842Z botium-connector-directline3 Directline Connection Status: 4 / FailedToConnect
+2025-02-18T09:18:33.843Z botium-connector-directline3 Error in waiting for activities: ajax error 403
+2025-02-18T09:18:33.846Z botium-connector-directline3 Stop called
+2025-02-18T09:18:33.846Z botium-connector-directline3 unsubscribed from directline activity subscription
+2025-02-18T09:18:33.846Z botium-connector-directline3 unsubscribing from directline connectionstatus subscription
+2025-02-18T09:18:33.846Z botium-connector-directline3 ending directline connection
+2025-02-18T09:18:33.847Z botium-connector-directline3 Clean called
+2025-02-18T09:18:33.847Z botium-connector-BaseContainer Cleanup rimrafing temp dir /Users/eliya/ts-chatbot-testing/botiumwork/Botium Chatbot Testing 20250218 141832 g3OqM
+

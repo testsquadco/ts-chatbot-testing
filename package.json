@@ -1,0 +1,25 @@
+{
+  "name": "botium-chatbot-testing",
+  "version": "1.0.0",
+  "description": "Automated Chatbot Testing Framework with Botium",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx botium-cli run --convos ./tests/convos",
+    "test:verbose": "npx botium-cli run --convos ./tests/convos --verbose",
+    "test:report": "rimraf reports/* && node scripts/run-tests.js",
+    "clean:reports": "rimraf reports/*"
+  },
+  "dependencies": {
+    "botium-core": "1.14.10",
+    "botium-cli": "1.1.0",
+    "botium-connector-directline3": "0.1.1",
+    "rimraf": "6.0.1"
+  },
+  "devDependencies": {
+    "chalk": "^4.1.2",
+    "moment": "^2.29.4"
+  },
+  "keywords": ["botium", "chatbot", "testing", "automation"],
+  "author": "",
+  "license": "MIT"
+} 

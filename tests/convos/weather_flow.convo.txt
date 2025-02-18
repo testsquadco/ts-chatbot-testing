@@ -1,0 +1,20 @@
+Weather Check Flow
+
+#me
+check weather
+
+#bot
+Sure! For which city would you like to check the weather?
+
+#me
+London
+
+#bot
+INTENT weather.check
+
+#me
+what's the weather like in New York?
+
+#bot
+INTENT weather.check
+ENTITY city="New York" 

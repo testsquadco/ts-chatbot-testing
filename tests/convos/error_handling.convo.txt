@@ -1,0 +1,17 @@
+Error Handling Flow
+
+#me
+asdfghjkl
+
+#bot
+I'm sorry, I didn't understand that. Could you please rephrase?
+
+#me
+!@#$%^&*()
+
+#bot
+I'm having trouble understanding. Would you like to:
+BUTTONS
+- Start over
+- Get help
+- Speak to a human 
