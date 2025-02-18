@@ -1,4 +1,18 @@
-# Botium Chatbot Testing Framework
+<p align="center">
+  <img src="https://staging.testsquad.co/wp-content/uploads/2025/02/testsquad-logo-500-469x100.png" width="400"/>
+</p>
+
+# TestSquad - Visual Layout Testing Framework (Boiler-plate)
+
+## About TestSquad
+
+TestSquad is a software testing company specializing in manual and automated testing solutions, ensuring high-quality software for global clients. We provide expert QA services, including mobile automation, to enhance product reliability and performance.
+
+📩 Contact us: info@testsquad.co | 🌐 Website: https://testsquad.co
+
+---
+
+## Overview
 
 A flexible and modular Proof-of-Concept (PoC) for testing chatbots using Botium. This framework allows easy integration with various chatbot platforms and provides detailed test reporting.
 
@@ -271,3 +285,21 @@ Common issues and solutions:
    - Verify JSON formatting in test files
 
 For more information about Botium capabilities and advanced features, visit the [Botium Documentation](https://botium.atlassian.net/wiki/spaces/BOTIUM/overview).
+
+
+## Support
+
+Need help implementing this framework or looking for custom automation solutions? Contact TestSquad:
+
+- 📧 Email: info@testsquad.co
+- 🌐 Website: https://testsquad.co
+- 💼 Services: Mobile Testing, Automation Solutions, QA Consulting
+
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+<p align="center">Powered by <a href="https://testsquad.co">TestSquad</a> - Your Quality Assurance Partner</p>
