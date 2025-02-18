@@ -2,7 +2,7 @@
   <img src="https://staging.testsquad.co/wp-content/uploads/2025/02/testsquad-logo-500-469x100.png" width="400"/>
 </p>
 
-# TestSquad - Visual Layout Testing Framework (Boiler-plate)
+# TestSquad - Botium Chatbot Testing Framework
 
 ## About TestSquad
 
